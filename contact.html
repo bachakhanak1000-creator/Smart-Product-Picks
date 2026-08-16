@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Smart Product Picks</title>
+<meta name="description" content="Get in touch with Smart Product Picks with questions, corrections, or feedback.">
+<link rel="canonical" href="https://example.com/contact.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="utility-bar">Independent product research. No fabricated reviews, ratings, or prices — ever. <a href="about.html">Learn how we work</a></div>
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="logo-mark">✓</span>Smart Product Picks</a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="buying-guides.html">Buying Guides</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="nav-search"><span class="mono">⌕</span><input id="site-search" type="text" placeholder="Search products..."></div>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a> / <span>Contact</span></div>
+</div>
+
+<section class="section wrap-narrow" style="padding-top:12px;">
+  <span class="kicker">Contact</span>
+  <h2 style="font-size:28px;margin-bottom:16px;">Get in touch</h2>
+  <p style="color:var(--muted);margin-bottom:24px;">Questions, corrections, or feedback about a product page — we'd like to hear it.</p>
+
+  <div class="notice" style="margin-bottom:26px;">
+    <span class="dot"></span>
+    <span>This is a static website. The form below is not currently connected to a backend or email service, so submissions are not being delivered yet. Once an email service is wired up, this notice will be removed.</span>
+  </div>
+
+  <form id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-status').textContent='This form is not yet connected to a backend — your message was not sent. Please see the notice above.';">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-field">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+    <div class="form-field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send message</button>
+    <p id="form-status" style="margin-top:12px;font-size:13px;color:var(--amber);"></p>
+  </form>
+</section>
+
+<script src="products-data.js"></script>
+<script src="app.js"></script>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px;"><span class="logo-mark">✓</span>Smart Product Picks</div>
+        <p style="max-width:300px;">Independent product research, comparisons, and buying guides. We do not publish fabricated prices, ratings, or reviews.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Smart Product Picks. All rights reserved.</span>
+      <span>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

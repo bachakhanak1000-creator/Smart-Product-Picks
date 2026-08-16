@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Categories — Smart Product Picks</title>
+<meta name="description" content="Browse product categories including Tech, Computers, Audio, Smart Home, Gaming, Mobile Accessories, Home & Office, Creator Gear, and Everyday Gadgets.">
+<link rel="canonical" href="https://example.com/categories.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="utility-bar">Independent product research. No fabricated reviews, ratings, or prices — ever. <a href="about.html">Learn how we work</a></div>
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="logo"><span class="logo-mark">✓</span>Smart Product Picks</a>
+    <nav class="primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="comparisons.html">Comparisons</a></li>
+        <li><a href="buying-guides.html">Buying Guides</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="nav-search"><span class="mono">⌕</span><input id="site-search" type="text" placeholder="Search products..."></div>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="index.html">Home</a> / <span>Categories</span></div>
+</div>
+
+<section class="section" style="padding-top:12px;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Browse</span>
+        <h2>All categories</h2>
+        <p>Each category page filters our verified product database — no separate content to maintain.</p>
+      </div>
+    </div>
+    <div class="trust-grid" id="all-categories" style="grid-template-columns:repeat(3,1fr);">
+    </div>
+  </div>
+</section>
+
+<script src="products-data.js"></script>
+<script src="app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const grid = document.getElementById('all-categories');
+  grid.innerHTML = CATEGORIES.map(c => `
+    <a href="products.html?cat=${encodeURIComponent(c.match[0])}" class="trust-card" style="display:block;">
+      <span class="num">CATEGORY</span>
+      <h3>${c.name}</h3>
+      <p>${PRODUCTS.filter(p => c.match.includes(p.category)).length} products</p>
+    </a>`).join('');
+});
+</script>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px;"><span class="logo-mark">✓</span>Smart Product Picks</div>
+        <p style="max-width:300px;">Independent product research, comparisons, and buying guides. We do not publish fabricated prices, ratings, or reviews.</p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+      </ul></div>
+      <div><h4>Legal</h4><ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Smart Product Picks. All rights reserved.</span>
+      <span>Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
