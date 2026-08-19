@@ -524,7 +524,10 @@ const CATEGORIES = [
     match: ["USB Hubs"]
   },
   {
+      {
     id: "item-finders",
     name: "Item Finders",
     match: ["Item Finders"]
   }
+];
+  
