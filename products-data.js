@@ -8,8 +8,8 @@
    once the Associates account is approved). Never hand-fill these with
    guessed numbers.
    ========================================================================== */
-
-const AMAZON_TAG = "YOUR_AMAZON_ASSOCIATE_TAG"; // replace once Associates account exists
+```javascript
+const AMAZON_TAG = "YOUR_AMAZON_ASSOCIATE_TAG";
 
 const PRODUCTS = [
   {
@@ -19,546 +19,515 @@ const PRODUCTS = [
     model: "WH-1000XM5",
     asin: "B09Z2S9FSX",
     category: "Audio",
-    description: "Over-ear wireless headphones built around Sony's dual-processor noise cancellation system, with multipoint Bluetooth connection and a lighter redesign compared to the previous XM4 generation.",
+    description: "Sony WH-1000XM5 over-ear wireless noise-cancelling headphones.",
     keyFeatures: [
-      "Active noise cancellation using two processors (QN1 + V1)",
-      "Multipoint connection to two Bluetooth devices at once",
-      "Speak-to-chat auto-pause",
-      "Touch controls on the right ear cup"
+      "Active noise cancellation",
+      "Multipoint Bluetooth connection",
+      "Speak-to-chat",
+      "Touch controls"
     ],
     specifications: {
       "Driver size": "30mm",
-      "Bluetooth version": "5.2",
-      "Battery life (ANC on)": "Up to 30 hours",
-      Charging: "USB-C, quick charge (3 min ≈ 3 hours playback)",
-      Weight: "≈250g"
+      "Bluetooth": "5.2",
+      "Battery life": "Up to 30 hours",
+      "Charging": "USB-C",
+      "Weight": "Approx. 250g"
     },
     pros: [
-      "Widely regarded as class-leading noise cancellation in its category",
-      "Multipoint pairing works reliably between laptop and phone",
-      "Comfortable padding for long listening sessions"
+      "Strong noise cancellation",
+      "Multipoint connection",
+      "Comfortable for long listening"
     ],
     cons: [
-      "No IP water-resistance rating",
-      "Case is not as compact as some competitors",
-      "Touch controls can register accidental taps"
+      "No water-resistance rating",
+      "Premium price"
     ],
     image: "",
     imageAlt: "Sony WH-1000XM5 wireless headphones",
-    productUrl: "https://www.amazon.com/dp/B0DDV3FRHR",
-    amazonUrl: https://amzn.to/45B3zUI
+    productUrl: "https://www.amazon.com/dp/B09Z2S9FSX",
+    amazonUrl: "https://amzn.to/45B3zUI",
     price: null,
     currency: "USD",
     rating: 4.5,
-reviewCount: 623,
+    reviewCount: 623,
     lastVerified: ""
   },
+
   {
     id: "apple-airpods-pro-2",
     name: "AirPods Pro (2nd generation)",
     brand: "Apple",
     model: "AirPods Pro 2",
-    asin: B0BJQWYLYN
+    asin: "B0BJQWYLYN",
     category: "Audio",
-    description: "Apple's second-generation in-ear noise cancelling earbuds, built around the H2 chip, with a USB-C charging case on current shipping units and Adaptive Audio support on compatible devices.",
+    description: "Apple AirPods Pro 2 wireless noise-cancelling earbuds.",
     keyFeatures: [
-      "H2 chip for noise cancellation and audio processing",
-      "Adaptive Transparency mode",
-      "IP54 dust/sweat/water resistance (earbuds and case)",
-      "Find My integration with the charging case"
+      "Apple H2 chip",
+      "Active noise cancellation",
+      "Adaptive Transparency",
+      "Find My support"
     ],
     specifications: {
-      Chip: "Apple H2",
-      "Water resistance": "IP54 (earbuds + case)",
-      "Battery life (ANC on)": "Up to 6 hours per charge, ~30 hours with case",
-      Charging: "USB-C / MagSafe / Qi",
-      "Ear tip sizes": "4 included (XS, S, M, L)"
+      "Chip": "Apple H2",
+      "Water resistance": "IP54",
+      "Battery life": "Up to 6 hours",
+      "Charging": "USB-C / MagSafe / Qi"
     },
     pros: [
-      "Deep integration with iOS/iPadOS/macOS (auto-switching, Find My)",
-      "Compact, in-ear form factor",
-      "Effective transparency mode for hearing surroundings"
+      "Excellent Apple ecosystem integration",
+      "Compact design",
+      "Effective transparency mode"
     ],
     cons: [
-      "Fewer customization options on Android devices",
-      "In-ear fit isn't ideal for every ear shape",
-      "Case charging port depends on model/region purchased"
+      "Best experience is with Apple devices",
+      "In-ear fit varies by user"
     ],
     image: "",
-    imageAlt: "Apple AirPods Pro 2nd generation with charging case",
-    productUrl: "https://www.amazon.com/dp/B0BJQWYLYN
-    amazonUrl: https://amzn.to/4x8jAh3
+    imageAlt: "Apple AirPods Pro 2",
+    productUrl: "https://www.amazon.com/dp/B0BJQWYLYN",
+    amazonUrl: "https://amzn.to/4x8jAh3",
     price: null,
     currency: "USD",
     rating: 4.7,
-reviewCount: 28853,
+    reviewCount: 28853,
     lastVerified: ""
   },
+
   {
-    id: "anker-313-powerbank",
-    name: "PowerCore Slim 10000 Power Bank",
-    brand: UGREEN
-    model: PB507
+    id: "ugreen-pb507",
+    name: "UGREEN PB507 10000mAh Power Bank",
+    brand: "UGREEN",
+    model: "PB507",
     asin: "B0DZ1TGX6T",
     category: "Mobile Accessories",
-    description: "A slim, pocket-sized 10,000mAh USB-C power bank from Anker's PowerCore line, designed for topping up a phone one to two times while traveling light.",
+    description: "UGREEN PB507 portable 10,000mAh power bank.",
     keyFeatures: [
       "10,000mAh capacity",
-      "USB-C input and output",
-      "Slim form factor (under 15mm thick on most units)",
-      "Trickle-charging mode for low-power accessories"
+      "USB-C charging",
+      "Compact portable design"
     ],
     specifications: {
-      Capacity: "10,000mAh",
-      Ports: "USB-C in/out, USB-A out (varies by revision)",
-      Output: "Up to 12W typical (model dependent)",
-      Weight: "≈180g"
+      "Capacity": "10,000mAh",
+      "Model": "PB507",
+      "Mfr Part Number": "75131",
+      "Battery": "Lithium Polymer"
     },
     pros: [
-      "Genuinely pocketable compared to bulkier 10,000mAh banks",
-      "Reliable brand with a multi-year warranty history",
-      "Simple LED charge indicator"
+      "Compact",
+      "Large battery capacity",
+      "USB-C support"
     ],
     cons: [
-      "Output wattage is modest — not built for fast-charging laptops",
-      "No wireless charging pad on this model",
-      "Charging the bank itself can take several hours"
+      "Not designed for high-power laptop charging"
     ],
     image: "",
-    imageAlt: "Anker PowerCore Slim 10000 power bank",
+    imageAlt: "UGREEN PB507 power bank",
     productUrl: "https://www.amazon.com/dp/B0DZ1TGX6T",
-amazonUrl: "https://amzn.to/4wViVyF",
+    amazonUrl: "https://amzn.to/4wViVyF",
     price: null,
     currency: "USD",
     rating: 4.4,
-reviewCount: 734,
+    reviewCount: 734,
     lastVerified: ""
   },
+
   {
     id: "tndaji-jlm-j6",
-name: "TNDAJI 15W Wireless Charger",
-brand: "TNDAJI",
-model: "JLM-J6",
-asin: "B0DLP157QH",
+    name: "TNDAJI 15W Magnetic Wireless Charger 2-Pack",
+    brand: "TNDAJI",
+    model: "JLM-J6",
+    asin: "B0DLP157QH",
     category: "Mobile Accessories",
-    description: "Apple's magnetic wireless charging puck that snaps to the back of MagSafe-compatible iPhones for aligned, cable-based wireless charging.",
+    description: "TNDAJI magnetic wireless charger set with two charging pads, USB-A adapters and Type-C charging cables.",
     keyFeatures: [
-      "Magnetic alignment ring for one-handed attachment",
-      "Compatible with Qi charging on non-MagSafe phones at lower wattage",
-      "Braided charging cable"
+      "15W wireless charging",
+      "Two magnetic charging pads",
+      "USB-A adapters included",
+      "Type-C charging cables"
     ],
     specifications: {
-      "Max output": "Up to 15W (MagSafe-compatible iPhone + compatible power adapter)",
-      "Cable length": "1 meter",
-      Connector: "USB-C (power adapter sold separately on most listings)"
+      "Output": "15W",
+      "Model": "JLM-J6",
+      "Quantity": "2",
+      "Warranty": "18 months"
     },
     pros: [
-      "Reliable magnetic alignment — no more missed charging pads",
-      "Works as a stand-friendly charger with some third-party accessories",
-      "Cable is more durable than typical wireless charging pads"
+      "Two charging pads",
+      "Adapters included",
+      "Useful multi-device setup"
     ],
     cons: [
-      "Requires a separate USB-C power adapter for full-speed charging",
-      "Charging speed drops significantly on non-MagSafe phones",
-      "Higher price than generic Qi pads"
+      "Charging speed depends on the device and adapter"
     ],
     image: "",
-    imageAlt: "Apple MagSafe Charger",
+    imageAlt: "TNDAJI JLM-J6 magnetic wireless charger",
     productUrl: "https://www.amazon.com/dp/B0DLP157QH",
-amazonUrl: "https://amzn.to/4qmv3Xy",
+    amazonUrl: "https://amzn.to/4qmv3Xy",
     price: null,
     currency: "USD",
     rating: 4.3,
-reviewCount: 10353,
+    reviewCount: 10353,
     lastVerified: ""
   },
+
   {
     id: "logitech-mx-master-3s",
     name: "MX Master 3S Wireless Mouse",
     brand: "Logitech",
     model: "MX Master 3S",
     asin: "B0BS9VVQPD",
-category: "Computer Accessories",
-    description: "A productivity-focused wireless mouse with an 8K DPI optical sensor, quiet clicks, and Logitech's MagSpeed electromagnetic scroll wheel, aimed at professionals who switch between multiple computers.",
+    category: "Computer Accessories",
+    description: "Logitech MX Master 3S wireless productivity mouse.",
     keyFeatures: [
-      "MagSpeed electromagnetic scroll wheel (ratchet or free-spin)",
-      "Multi-device pairing via Bluetooth or Logi Bolt receiver",
-      "App-specific customizable buttons via Logi Options+",
-      "Quiet click switches compared to the previous MX Master 3"
+      "8,000 DPI sensor",
+      "MagSpeed scrolling",
+      "Multi-device support",
+      "Quiet clicks",
+      "USB-C rechargeable"
     ],
     specifications: {
-      Sensor: "8,000 DPI optical",
-      Connectivity: "Bluetooth Low Energy or USB Logi Bolt receiver",
-      Battery: "Rechargeable via USB-C, quoted up to 70 days on a full charge",
-      Buttons: "7 programmable buttons"
+      "Sensor": "8,000 DPI",
+      "Connectivity": "Bluetooth / Logi Bolt",
+      "Battery": "Rechargeable",
+      "Buttons": "7 programmable buttons"
     },
     pros: [
-      "Scroll wheel is genuinely faster for long documents/spreadsheets",
-      "Can pair with up to three devices and switch between them",
-      "Comfortable for extended use for most hand sizes"
+      "Excellent scrolling",
+      "Multi-device support",
+      "Comfortable ergonomic design"
     ],
     cons: [
-      "Premium price relative to standard wireless mice",
-      "Shaped for right-hand use only",
-      "Software (Logi Options+) is required to unlock full customization"
+      "Right-hand design",
+      "Premium price"
     ],
     image: "",
     imageAlt: "Logitech MX Master 3S wireless mouse",
     productUrl: "https://www.amazon.com/dp/B0BS9VVQPD",
-amazonUrl: "https://amzn.to/45Co6In",
+    amazonUrl: "https://amzn.to/45Co6In",
     price: null,
     currency: "USD",
     rating: 4.5,
-reviewCount: 958,
-    
+    reviewCount: 958,
     lastVerified: ""
   },
+
   {
     id: "keychron-k2-ultra",
-name: "Keychron K2 Ultra",
-brand: "Keychron",
-model: "K2U-J4",
-asin: "B0GQLPYDLQ",
-category: "Computer Keyboards",
-    description: "A compact 75%-layout mechanical keyboard with Bluetooth and wired connectivity, hot-swappable switch options on newer revisions, and both Mac and Windows key layouts included.",
+    name: "Keychron K2 Ultra",
+    brand: "Keychron",
+    model: "K2U-J4",
+    asin: "B0GQLPYDLQ",
+    category: "Computer Keyboards",
+    description: "Keychron K2 Ultra mechanical keyboard for everyday use, programming and gaming.",
     keyFeatures: [
-      "75% layout — retains arrow keys and function row in a compact frame",
-      "Bluetooth 5.1 with multi-device pairing, or wired USB-C mode",
-      "RGB or white backlighting depending on configuration",
-      "Mac/Windows switchable key layout"
+      "Mechanical keyboard",
+      "Compact layout",
+      "Mac and Windows support",
+      "Wireless and wired connectivity"
     ],
     specifications: {
-      Layout: "75% (84 keys)",
-      Connectivity: "Bluetooth 5.1 or USB-C wired",
-      "Switch types": "Gateron mechanical (varies by SKU); hot-swap on newer versions",
-      Battery: "4000mAh, rated by Keychron in the multi-week range with backlight off"
+      "Model": "K2U-J4",
+      "Weight": "2.4 pounds",
+      "Quantity": "1",
+      "Warranty": "1 year"
     },
     pros: [
-      "Good typing feel for the price point in the mechanical keyboard category",
-      "Works well across Mac and Windows without extra software",
-      "Compact footprint compared to full-size mechanical boards"
+      "Compact design",
+      "Mechanical switches",
+      "Suitable for work and gaming"
     ],
     cons: [
-      "Stock stabilizers are less refined than higher-end custom boards",
-      "RGB versions use more battery in wireless mode",
-      "No dedicated volume knob on the base K2"
+      "Features can vary by exact configuration"
     ],
     image: "",
-    imageAlt: "Keychron K2 wireless mechanical keyboard",
+    imageAlt: "Keychron K2 Ultra mechanical keyboard",
     productUrl: "https://www.amazon.com/dp/B0GQLPYDLQ",
-amazonUrl: "https://amzn.to/4wx0WOz",
+    amazonUrl: "https://amzn.to/4wx0WOz",
     price: null,
     currency: "USD",
     rating: 4.5,
-reviewCount: 23,
+    reviewCount: 23,
     lastVerified: ""
   },
+
   {
-    id: "echo-dot-5",
-    name: "Echo Dot (5th Gen)",
+    id: "echo-dot-5-bundle",
+    name: "Echo Dot Bundle (5th Gen) with Battery Base",
     brand: "Amazon",
-    model: "Echo Dot 5th Generation",
+    model: "Echo Dot (5th Gen)",
     asin: "B0BF2HCMJB",
     category: "Smart Home",
-    description: "Amazon's compact smart speaker with Alexa built in, used for voice control of smart-home devices, music playback, and basic routines.",
+    description: "Amazon Echo Dot 5th generation bundle with charcoal battery base.",
     keyFeatures: [
-      "Built-in Alexa voice assistant",
-      "Temperature sensor for routines like auto-fan control",
-      "Works as a hub for compatible smart-home skills",
-      "Physical mic-off switch"
+      "Alexa voice assistant",
+      "Temperature sensor",
+      "Battery base",
+      "Smart-home controls"
     ],
     specifications: {
-      Speaker: "1.73-inch driver",
-      Connectivity: "Wi-Fi, Bluetooth",
-      Power: "Wired power adapter (included)",
-      Sensors: "Temperature sensor"
+      "Generation": "5th Gen",
+      "Color": "Charcoal",
+      "Connectivity": "Wi-Fi / Bluetooth"
     },
     pros: [
-      "Low entry price for a full Alexa smart speaker",
-      "Compact size fits on most shelves or nightstands",
-      "Frequent software feature updates via Amazon"
+      "Compact",
+      "Alexa integration",
+      "Portable bundle design"
     ],
     cons: [
-      "Sound quality is basic compared to larger Echo models",
-      "Deepest smart-home integration favors Alexa-compatible ecosystems",
-      "Relies on cloud connectivity for most voice features"
+      "Most voice features require internet connectivity"
     ],
     image: "",
-    imageAlt: "Amazon Echo Dot 5th generation smart speaker",
+    imageAlt: "Amazon Echo Dot 5th Gen bundle",
     productUrl: "https://www.amazon.com/dp/B0BF2HCMJB",
-    amazonUrl: https://amzn.to/45EVsGD
+    amazonUrl: "https://amzn.to/45EVsGD",
     price: null,
     currency: "USD",
     rating: 4.4,
-reviewCount: 282,
-    
+    reviewCount: 282,
     lastVerified: ""
   },
+
   {
     id: "philips-hue-essential-a19-4-pack",
-name: "Philips Hue Essential 60W WCA A19 4-Pack",
+    name: "Philips Hue Essential 60W WCA A19 4-Pack",
     brand: "Philips Hue",
     model: "Hue Essential- 60W WCA A19 4P",
-asin: "B0FMGP1P6W",
+    asin: "B0FMGP1P6W",
     category: "Smart Home",
-    description: "A color-changing smart LED bulb that works through the Philips Hue Bridge (or Bluetooth directly), supporting a wide color range and integration with major voice assistants.",
+    description: "Four-pack of Philips Hue Essential A19 smart LED bulbs.",
     keyFeatures: [
-      "Wide color range plus tunable white light",
-      "Works via Hue Bridge (Zigbee) or direct Bluetooth",
-      "Compatible with Alexa, Google Assistant, and Apple Home",
-      "Supports scheduling and scene automation in the Hue app"
+      "Four smart bulbs",
+      "White and color lighting",
+      "Smart control",
+      "Hue ecosystem support"
     ],
     specifications: {
-      Socket: "E26 (standard US bulb base)",
-      Connectivity: "Zigbee (via Bridge) or Bluetooth direct",
-      Lumens: "Approx. 800 lumens (bulb dependent)",
-      Lifespan: "Rated around 25,000 hours by the manufacturer"
+      "Quantity": "4",
+      "Model": "592592",
+      "Type": "A19 LED bulb",
+      "Manufacturer": "Signify North America Inc."
     },
     pros: [
-      "One of the more mature smart-lighting ecosystems for reliability",
-      "Wide voice-assistant compatibility",
-      "Bridge setup unlocks more advanced automations than Bluetooth-only bulbs"
+      "Four bulbs in one pack",
+      "Smart lighting features",
+      "White and color options"
     ],
     cons: [
-      "Full feature set requires buying a separate Hue Bridge",
-      "More expensive per bulb than basic smart bulb alternatives",
-      "Bluetooth-only mode has a shorter range and fewer automation options"
+      "Some advanced Hue features require additional equipment"
     ],
     image: "",
-    imageAlt: "Philips Hue White and Color Ambiance smart bulb",
+    imageAlt: "Philips Hue Essential A19 smart bulbs",
     productUrl: "https://www.amazon.com/dp/B0FMGP1P6W",
-amazonUrl: "https://amzn.to/4qrIK7B",
+    amazonUrl: "https://amzn.to/4qrIK7B",
     price: null,
     currency: "USD",
     rating: 4.6,
-reviewCount: 890,
+    reviewCount: 890,
     lastVerified: ""
   },
+
   {
     id: "razer-deathadder-v4-pro",
-name: "Razer DeathAdder V4 Pro Wireless Gaming Mouse",
-brand: "Razer",
-model: "RZ01-05330100-R3U1",
-asin: "B0F3QCXL82",
-category: "Gaming Mice", 
-    description: "A lightweight update to Razer's long-running DeathAdder ergonomic gaming mouse line, built around Razer's Focus Pro sensor and a redesigned lighter shell.",
+    name: "Razer DeathAdder V4 Pro",
+    brand: "Razer",
+    model: "RZ01-05330100-R3U1",
+    asin: "B0F3QCXL82",
+    category: "Gaming Mice",
+    description: "Razer DeathAdder V4 Pro gaming mouse.",
     keyFeatures: [
-      "Focus Pro 30K optical sensor",
-      "Redesigned shell — lighter than earlier DeathAdder generations",
-      "Braided cable wired design",
-      "Third-generation mechanical switches rated for tens of millions of clicks"
+      "Gaming-focused ergonomic design",
+      "Razer HyperSpeed wireless Gen-2 dongle",
+      "Mouse grip tape",
+      "USB Type-A to USB Type-C cable"
     ],
     specifications: {
-      Sensor: "Focus Pro 30K DPI",
-      Weight: "Approx. 59g",
-      Connection: "Wired (USB); a separate wireless V3 Pro model exists",
-      Switches: "Razer Optical Gen-3 (model dependent)"
+      "Model": "RZ01-05330100-R3U1",
+      "UPC": "840272920718",
+      "Warranty": "2 years"
     },
     pros: [
-      "Ergonomic shape favored by many right-handed FPS players",
-      "Significant weight reduction versus older DeathAdder models",
-      "Consistent sensor tracking at high DPI"
+      "Gaming-focused design",
+      "Wireless dongle included",
+      "Grip tape included"
     ],
     cons: [
-      "Right-hand-only ergonomic shape",
-      "Wired-only on the base V3 (wireless requires the Pro variant)",
-      "Razer Synapse software required for full customization"
+      "Designed primarily for gaming"
     ],
     image: "",
-    imageAlt: "Razer DeathAdder V3 gaming mouse",
+    imageAlt: "Razer DeathAdder V4 Pro gaming mouse",
     productUrl: "https://www.amazon.com/dp/B0F3QCXL82",
-amazonUrl: "https://amzn.to/3UryyQB",
+    amazonUrl: "https://amzn.to/3UryyQB",
     price: null,
     currency: "USD",
     rating: 4.4,
-reviewCount: 486,
+    reviewCount: 486,
     lastVerified: ""
   },
+
   {
     id: "elgato-stream-deck-mk2",
     name: "Stream Deck MK.2",
     brand: "Elgato",
     model: "10GBA9901",
-asin: "B09738CV2G",
-category: "PC Accessories",
-    description: "A 15-key LCD macro pad used by streamers, podcasters, and editors to trigger scenes, shortcuts, and app actions through Elgato's Stream Deck software.",
+    asin: "B09738CV2G",
+    category: "PC Accessories",
+    description: "Elgato Stream Deck MK.2 customizable control deck for streaming and content creation.",
     keyFeatures: [
       "15 customizable LCD keys",
-      "Adjustable stand, detachable USB-C cable",
-      "Plugin ecosystem for OBS, Twitch, Discord, and other creator tools",
-      "Multi-action and folder support for nested shortcuts"
+      "USB-C cable",
+      "Desktop stand",
+      "Stream Deck software"
     ],
     specifications: {
-      Keys: "15 LCD keys",
-      Connection: "USB-C (wired)",
-      Software: "Elgato Stream Deck app (Windows/Mac)",
-      Mounting: "Built-in adjustable stand"
+      "Keys": "15",
+      "Model": "10GBA9901",
+      "Connection": "USB-C",
+      "Warranty": "2 years"
     },
     pros: [
-      "Large third-party plugin library covers most streaming/editing tools",
-      "Physical, tactile control is faster than clicking through menus mid-stream",
-      "Folder/multi-action support scales well for complex setups"
+      "Highly customizable",
+      "Useful for streaming",
+      "Large plugin ecosystem"
     ],
     cons: [
-      "Wired-only — no wireless variant of the MK.2 itself",
-      "Learning curve to configure advanced multi-actions",
-      "Desk space required for the stand"
+      "Requires a wired USB connection"
     ],
     image: "",
-    imageAlt: "Elgato Stream Deck MK.2 macro keypad",
+    imageAlt: "Elgato Stream Deck MK.2",
     productUrl: "https://www.amazon.com/dp/B09738CV2G",
-amazonUrl: "https://amzn.to/468wvDz",
+    amazonUrl: "https://amzn.to/468wvDz",
     price: null,
     currency: "USD",
     rating: 4.8,
-reviewCount: 10265,
+    reviewCount: 10265,
     lastVerified: ""
   },
+
   {
-    id: "hiearcool-usb-c-hub",
-name: "Hiearcool USB-C Hub",
-brand: "Hiearcool",
-model: "UCN3286",
-asin: "B07WPTG7NX",
-category: "USB Hubs",
-    description: "A USB-C dock that adds HDMI, additional USB-A/USB-C ports, an SD/microSD card reader, and pass-through charging to a single laptop port.",
+    id: "hiearcool-ucn3286",
+    name: "Hiearcool USB-C Hub",
+    brand: "Hiearcool",
+    model: "UCN3286",
+    asin: "B07WPTG7NX",
+    category: "USB Hubs",
+    description: "Hiearcool multiport USB-C hub for compatible computers and devices.",
     keyFeatures: [
-      "HDMI output, commonly up to 4K on supported laptops",
-      "USB-C power delivery pass-through charging",
-      "SD and microSD card slots",
-      "Multiple USB-A data ports"
+      "USB-C connectivity",
+      "Multiport expansion",
+      "HDMI support",
+      "USB ports"
     ],
     specifications: {
-      Ports: "HDMI, USB-C PD, 2–3x USB-A, SD, microSD (varies by exact SKU)",
-      "Video output": "Up to 4K depending on host device support",
-      Connector: "USB-C"
+      "Model": "UCN3286",
+      "Mfr Part Number": "UCN3286",
+      "Warranty": "2 years",
+      "Quantity": "1"
     },
     pros: [
-      "Consolidates several dongles into one hub",
-      "Pass-through charging avoids needing a separate charging cable",
-      "Reasonably compact for travel"
+      "Adds multiple ports",
+      "Compact",
+      "Useful for laptops"
     ],
     cons: [
-      "Video output resolution/refresh rate depends heavily on the host laptop",
-      "Can run warm under sustained high-bandwidth use",
-      "Not all ports run at full speed simultaneously on every model"
+      "Exact port capabilities depend on the device configuration"
     ],
     image: "",
-    imageAlt: "Anker 7-in-1 USB-C hub",
+    imageAlt: "Hiearcool USB-C hub",
     productUrl: "https://www.amazon.com/dp/B07WPTG7NX",
-amazonUrl: "https://amzn.to/3UmhOdt",
+    amazonUrl: "https://amzn.to/3UmhOdt",
     price: null,
     currency: "USD",
     rating: 4.6,
-reviewCount: 51886,
+    reviewCount: 51886,
     lastVerified: ""
   },
+
   {
     id: "life360-tile-mate-2-pack",
-name: "Life360 Tile Mate Bluetooth Tracker 2-Pack",
-brand: "Life360",
-model: "T1801A",
-asin: "B0D63573CF",
-category: "Item Finders",
-    description: "A small Bluetooth tracker that attaches to keys, bags, or other everyday items and works with the Tile app's find/ring and community-finding network.",
+    name: "Life360 Tile Mate Bluetooth Tracker 2-Pack",
+    brand: "Life360",
+    model: "T1801A",
+    asin: "B0D63573CF",
+    category: "Item Finders",
+    description: "Two-pack of Tile Mate Bluetooth trackers for keys, bags and other everyday items.",
     keyFeatures: [
-      "Ring-to-find via the Tile app",
-      "Community Find network for items outside direct Bluetooth range",
-      "Replaceable battery on the Mate model",
-      "Integration with Amazon Alexa for voice-based finding"
+      "Two Tile Mate trackers",
+      "Bluetooth tracking",
+      "Tile app support",
+      "Black and white trackers"
     ],
     specifications: {
-      Connectivity: "Bluetooth",
-      Range: "Roughly 250 ft direct Bluetooth range (manufacturer figure, environment-dependent)",
-      Battery: "Replaceable, roughly 3-year manufacturer estimate",
-      "Water resistance": "Water-resistant (not fully waterproof)"
+      "Quantity": "2",
+      "Model": "T1801A",
+      "Part Number": "RE-60122",
+      "Warranty": "1 year"
     },
     pros: [
-      "Simple, well-established app experience",
-      "Replaceable battery avoids e-waste of sealed trackers",
-      "Community Find network can help locate items beyond Bluetooth range"
+      "Two trackers included",
+      "Useful for keys and bags",
+      "Established tracking ecosystem"
     ],
     cons: [
-      "No built-in precision-finding (UWB) like some competing trackers",
-      "Community Find network density varies by region",
-      "Requires the Tile app running/updated to work reliably"
+      "Bluetooth range depends on environment"
     ],
     image: "",
-    imageAlt: "Tile Mate Bluetooth tracker",
+    imageAlt: "Life360 Tile Mate Bluetooth trackers",
     productUrl: "https://www.amazon.com/dp/B0D63573CF",
-amazonUrl: "https://amzn.to/4gGcU3G",
+    amazonUrl: "https://amzn.to/4gGcU3G",
     price: null,
     currency: "USD",
     rating: 4.2,
-reviewCount: 10601,
+    reviewCount: 10601,
     lastVerified: ""
   }
 ];
 
 const CATEGORIES = [
   {
-    id: "tech",
-    name: "Tech",
-    match: [
-      "Audio",
-      "Computers",
-      "Mobile Accessories"
-    ]
-  },
-  {
-    id: "computers",
-    name: "Computers",
-    match: [
-      "Computers"
-    ]
-  },
-  {
     id: "audio",
     name: "Audio",
-    match: [
-      "Audio"
-    ]
-  },
-  {
-    id: "smart-home",
-    name: "Smart Home",
-    match: [
-      "Smart Home"
-    ]
-  },
-  {
-    id: "gaming",
-    name: "Gaming",
-    match: [
-      "Gaming"
-    ]
+    match: ["Audio"]
   },
   {
     id: "mobile-accessories",
     name: "Mobile Accessories",
-    match: [
-      "Mobile Accessories"
-    ]
+    match: ["Mobile Accessories"]
   },
   {
-    id: "home-office",
-    name: "Home & Office",
-    match: [
-      "Home & Office"
-    ]
+    id: "computer-accessories",
+    name: "Computer Accessories",
+    match: ["Computer Accessories"]
   },
   {
-    id: "creator-gear",
-    name: "Creator Gear",
-    match: [
-      "Creator Gear"
-    ]
+    id: "computer-keyboards",
+    name: "Computer Keyboards",
+    match: ["Computer Keyboards"]
   },
   {
-    id: "everyday-gadgets",
-    name: "Everyday Gadgets",
-    match: [
-      "Everyday Gadgets"
-    ]
+    id: "smart-home",
+    name: "Smart Home",
+    match: ["Smart Home"]
+  },
+  {
+    id: "gaming-mice",
+    name: "Gaming Mice",
+    match: ["Gaming Mice"]
+  },
+  {
+    id: "pc-accessories",
+    name: "PC Accessories",
+    match: ["PC Accessories"]
+  },
+  {
+    id: "usb-hubs",
+    name: "USB Hubs",
+    match: ["USB Hubs"]
+  },
+  {
+    id: "item-finders",
+    name: "Item Finders",
+    match: ["Item Finders"]
   }
 ];
+```
