@@ -8,7 +8,6 @@
    once the Associates account is approved). Never hand-fill these with
    guessed numbers.
    ========================================================================== */
-```javascript
 const AMAZON_TAG = "YOUR_AMAZON_ASSOCIATE_TAG";
 
 const PRODUCTS = [
@@ -529,5 +528,4 @@ const CATEGORIES = [
     name: "Item Finders",
     match: ["Item Finders"]
   }
-];
-```
+
