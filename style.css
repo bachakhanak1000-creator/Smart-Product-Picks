@@ -471,3 +471,32 @@ footer.site ul a:hover{color:#fff;}
   .hero h1{font-size:30px;}
   .footer-grid{grid-template-columns:1fr;}
 }
+.no-product-image {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #f4f7f6;
+  color: #173f35;
+}
+
+.no-product-image .no-image-icon {
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.no-product-image strong {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.no-product-image span {
+  font-size: 12px;
+  color: #66736f;
+}
