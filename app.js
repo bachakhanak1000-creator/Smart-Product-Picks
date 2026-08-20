@@ -43,7 +43,7 @@ function productCardHTML(p){
     <div class="pcard-img">
   <span class="pcard-cat">${p.category}</span>
   ${p.image
-    ? <img src="${p.image}" alt="${p.imageAlt || p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+    ? `<img src="${p.image}" alt="${p.imageAlt || p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">`
     : `<div class="no-product-image">
          <div class="no-image-icon">📦</div>
          <strong>${p.brand}</strong>
