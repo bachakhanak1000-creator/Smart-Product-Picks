@@ -41,13 +41,20 @@ function productCardHTML(p){
   return `
   <article class="pcard" data-category="${p.category}" data-name="${p.name.toLowerCase()}" data-brand="${p.brand.toLowerCase()}">
     <div class="pcard-img">
-      <span class="pcard-cat">${p.category}</span>
-      ${p.image ? `<img src="${p.image}" alt="${p.imageAlt || p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` : `<span>Product image unavailable</span>`}
-    </div>
-    <div class="pcard-body">
-      <span class="pcard-brand">${p.brand}</span>
-      <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
-      <p class="pcard-desc">${p.description}</p>
+  <span class="pcard-cat">${p.category}</span>
+  ${p.image
+    ? <img src="${p.image}" alt="${p.imageAlt || p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+    : `<div class="no-product-image">
+         <div class="no-image-icon">📦</div>
+         <strong>${p.brand}</strong>
+         <span>Product image unavailable</span>
+       </div>`
+  }
+</div>
+<div class="pcard-body">
+  <span class="pcard-brand">${p.brand}</span>
+  <h3><a href="product.html?id=${p.id}">${p.name}</a></h3>
+  <p class="pcard-desc">${p.description}</p>
       <div class="pcard-meta">
         ${priceHTML}
         ${ratingHTML}
