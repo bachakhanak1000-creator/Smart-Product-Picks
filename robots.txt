@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bachakhanak1000-creator.github.io/Smart-Product-Picks/sitemap.xml
