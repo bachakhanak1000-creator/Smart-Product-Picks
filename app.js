@@ -146,9 +146,38 @@ function renderProductDetail(){
     return;
   }
 
-  document.title = `${p.name} — Smart Product Picks`;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if(metaDesc) metaDesc.setAttribute('content', p.description.slice(0,155));
+  document.title = `${p.name} | Smart Product Picks`;
+
+const seoDescription =
+  `Explore ${p.name} specifications, features, pros and cons, and practical product research from Smart Product Picks.`;
+
+const metaDesc = document.querySelector('meta[name="description"]');
+if(metaDesc) {
+  metaDesc.setAttribute('content', seoDescription);
+}
+
+const productUrl =
+  `${window.location.origin}${window.location.pathname}?id=${encodeURIComponent(p.id)}`;
+
+const canonical = document.querySelector('link[rel="canonical"]');
+if(canonical) {
+  canonical.setAttribute('href', productUrl);
+}
+
+const ogTitle = document.querySelector('meta[property="og:title"]');
+if(ogTitle) {
+  ogTitle.setAttribute('content', `${p.name} | Smart Product Picks`);
+}
+
+const ogDescription = document.querySelector('meta[property="og:description"]');
+if(ogDescription) {
+  ogDescription.setAttribute('content', seoDescription);
+}
+
+const ogUrl = document.querySelector('meta[property="og:url"]');
+if(ogUrl) {
+  ogUrl.setAttribute('content', productUrl);
+}
 
   const price = fmtPrice(p.price, p.currency);
   const specRows = Object.entries(p.specifications).map(([k,v]) => `
