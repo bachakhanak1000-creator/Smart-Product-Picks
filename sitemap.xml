@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/about.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/categories.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/products.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/reviews.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/comparisons.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/buying-guides.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/blog.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/deals.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/contact.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/privacy.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/terms.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/disclaimer.html</loc></url>
-  <url><loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/affiliate-disclosure.html</loc></url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/categories.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/products.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/reviews.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/comparisons.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/buying-guides.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/blog.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/deals.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/contact.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/privacy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/terms.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/disclaimer.html</loc>
+  </url>
+
+  <url>
+    <loc>https://bachakhanak1000-creator.github.io/smart-product-picks-store/affiliate-disclosure.html</loc>
+  </url>
+
 </urlset>
