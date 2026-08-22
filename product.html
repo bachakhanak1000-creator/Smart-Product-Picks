@@ -4,25 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Product Details & Research | Smart Product Picks</title>
+<title>Product Details | Smart Product Picks</title>
 
-<meta name="description" content="Explore detailed product information, specifications, features, pros and cons, and useful product research from Smart Product Picks.">
+<meta name="description" content="Explore product specifications, features, pros and cons, and practical product research from Smart Product Picks.">
 
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
 <link rel="canonical" href="https://bachakhanak1000-creator.github.io/smart-product-picks-store/product.html">
 
-<meta property="og:title" content="Product Details & Research | Smart Product Picks">
-<meta property="og:description" content="Explore product specifications, features, pros and cons, and practical research from Smart Product Picks.">
+<meta property="og:title" content="Product Details | Smart Product Picks">
+<meta property="og:description" content="Explore product specifications, features, pros and cons, and practical product research from Smart Product Picks.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://bachakhanak1000-creator.github.io/smart-product-picks-store/product.html">
 <meta property="og:site_name" content="Smart Product Picks">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Product Details & Research | Smart Product Picks">
-<meta name="twitter:description" content="Explore detailed product information and practical product research.">
+<meta name="twitter:title" content="Product Details | Smart Product Picks">
+<meta name="twitter:description" content="Explore product specifications, features, pros and cons, and practical product research.">
 
 <link rel="stylesheet" href="style.css">
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const id = new URLSearchParams(window.location.search).get("id");
+  const product = window.PRODUCTS?.find(p => p.id === id);
+
+  if (!product) return;
+
+  const url = "https://bachakhanak1000-creator.github.io/smart-product-picks-store/product.html?id=" + product.id;
+
+  document.title = product.name + " | Smart Product Picks";
+
+  const description =
+    "Explore " + product.name +
+    " specifications, features, pros and cons, and practical product research from Smart Product Picks.";
+
+  const metaDescription = document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute("content", description);
+  }
+
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) {
+    canonical.setAttribute("href", url);
+  }
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) {
+    ogTitle.setAttribute("content", product.name + " | Smart Product Picks");
+  }
+
+  const ogDescription = document.querySelector('meta[property="og:description"]');
+  if (ogDescription) {
+    ogDescription.setAttribute("content", description);
+  }
+});
+</script>
+
 </head>
 <body>
 
